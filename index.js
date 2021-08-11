@@ -9,6 +9,7 @@ var getTodaysWeather = (searchValue) => {
     .then((res) => res.json())
     .then((data) => {
       console.log(data)
+      document.getElementById.('#form1')
       //pull data here from object "windspeed example"
       forcast(data.coord.lat, data.coord.lon)
     })
@@ -29,4 +30,4 @@ var forcast = (lat, lon) => {
     .catch((err) => console.log(err))
 }
 
-getTodaysWeather('Denver')
+getTodaysWeather('San Diego')
